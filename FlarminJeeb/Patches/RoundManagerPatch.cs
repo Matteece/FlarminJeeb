@@ -16,10 +16,10 @@ namespace FlarminJeeb.Patches
         {
             RoundManagerPatch.isShipLanded = true;
 
-            /**if (RoundManager.Instance.currentLevel.name.Contains("Gordion"))
+            if (RoundManager.Instance.currentLevel.name.Contains("Gordion"))
             {
                 RoundManagerPatch.isShipLanded = false;
-            }*/
+            }
         }
 
         [HarmonyPatch(typeof(RoundManager), nameof(RoundManager.DespawnPropsAtEndOfRound))]
